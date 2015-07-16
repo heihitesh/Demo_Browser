@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    android:background="@drawable/back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/goback"
+            android:id="@+id/bBack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="HISTORY"
+            android:textSize="28dp"
+            android:typeface="serif"
+
+            android:background="#ffff5b5d"
+            android:gravity="center"
+            android:layout_weight="0.99" />
+
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/photo"
+            android:layout_weight="0.03"
+            android:id="@+id/bdeleteDataBase"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>   <!-- Does need to define the Table ROw !-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="URL"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:background="#fffffd5d"
+                android:gravity="center"
+                android:id="@+id/textView7"
+                android:layout_weight="1 "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:background="#ff86d9ff"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/hot"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get info From DataBase "
+        android:textColor="#ffd7f3fb"
+        android:id="@+id/tvhitSQLinfo" />
+
+</ScrollView>
+</LinearLayout>
